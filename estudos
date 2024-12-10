@@ -618,3 +618,66 @@ Dependendo das condições, uma mensagem de sucesso ou erro é exibida.
 Adicionar estilos CSS para melhorar a aparência.
 Usar mensagens mais claras para os alertas.
 Substituir o método alert por exibição direta no HTML (usando o <span>). -->
+
+
+    ESTUDAR =>
+    https://www.devmedia.com.br/programacao-orientada-a-objetos-e-programacao-estruturada/32813
+
+    https://pt.stackoverflow.com/questions/549603/como-fazer-um-select-din%C3%AAmico-de-marca-e-modelo-de-ve%C3%ADculos-s%C3%B3-com-html-css-e-ja
+
+
+=======================================================
+
+https://pt.stackoverflow.com/questions/415123/problema-ao-calcular-a-quantidade-de-combust%C3%ADvel-com-javascript
+
+
+========================================
+
+    Problema ao calcular a quantidade de combustível com Javascript
+Perguntada 5 anos, 2 meses atrás
+Modified 5 anos, 2 meses atrás
+Vista 2mil vezes
+0
+
+Chico Bento possui um carro que faz, em média, 12 km com um litro de gasolina. Ele realizou uma viagem com seu carro e está interessado em saber quantos litros de combustível o carro consumiu. Para tal, ele dispõe de duas informações: o tempo gasto dirigindo e a velocidade média do carro. Escreva um algoritmo para calcular quantos litros de combustível o carro de Chico Bento consumiu.
+
+Código:
+
+<script>
+    // 12km = 1L de gasolina
+    // O tempo gasto dirigido e a velocidade média do carro
+    // velocidade media = D / T
+    var distancia = parseFloat(prompt("Qual foi a distância percorrida ? ")); // 400KM
+    var tempoGasto = parseFloat(prompt("Qual foi o tempo gasto da viagem ? ")); // 50 horas
+    var vlcMedia = distancia / tempoGasto; // 200/30 = 8KM por hora
+    var gasolina = 0;
+    document.write("A distância percorrida foi: " + distancia + "km/h <br/>");
+    document.write("O tempo gasto foi: " + tempoGasto + "hr/s <br/>");
+    document.write("A velocidade média foi de: " + vlcMedia.toFixed(2) + "km/h <br/>");
+    for(contador = 1; contador < vlcMedia; contador++){
+        gasolina+=vlcMedia;
+        document.write("Na " + contador + " hora de viagem, Chico Bento gastou " + gasolina.toFixed(2) + "L<br/>");
+    }
+
+</script>
+Tentei encontrar pesquisas no Google onde informa a resposta para comparar o que estava errado no meu código, porém não achei nada semelhante. Sabendo que 12km = 1L de gasolina, como posso colocar isso no meu código? Pois pensei em fazer algo como if ou while.
+
+A saída do meu código é esse:
+
+A distância percorrida foi: 500km/h
+
+O tempo gasto foi: 30hr/s
+
+A velocidade média foi de: 16.67km/h
+
+Na 1 hora de viagem, Chico Bento gastou 16.67L
+
+Na 2 hora de viagem, Chico Bento gastou 33.33L
+
+. . .
+
+Na 16 hora de viagem, Chico Bento gastou 266.67L
+
+Referência: EscolaKids, UFRN
+
+javascript
